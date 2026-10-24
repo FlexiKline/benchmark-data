@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792853163171,
+  "lastUpdate": 1792853824360,
   "repoUrl": "https://github.com/FlexiKline/FlexiKline",
   "entries": {
     "L1 frame time (us/frame)": [
@@ -391,6 +391,204 @@ window.BENCHMARK_DATA = {
             "name": "frame_scenarios/load/indicators-14",
             "value": 1030.7,
             "range": "±7.4%",
+            "unit": "us/frame"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "committer": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "distinct": true,
+          "id": "d181774ffd663bae4f47832c6e04b69143a5f6b8",
+          "message": "docs: refresh READMEs with features, performance table and benchmark index",
+          "timestamp": "2026-10-24T22:20:05+08:00",
+          "tree_id": "7789f0cda02680dfe0fff0bc8f3ced1715d64568",
+          "url": "https://github.com/FlexiKline/FlexiKline/commit/d181774ffd663bae4f47832c6e04b69143a5f6b8"
+        },
+        "date": 1792853824101,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "paint_frame/pan/base/cw7",
+            "value": 213.4,
+            "range": "±4.2%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/pan/base/cw2",
+            "value": 219.4,
+            "range": "±1.8%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/base/slow",
+            "value": 336,
+            "range": "±2.1%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/base/fast",
+            "value": 466.4,
+            "range": "±5.4%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw7",
+            "value": 505.5,
+            "range": "±4.2%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw2",
+            "value": 720.6,
+            "range": "±4.8%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/multi/slow",
+            "value": 544.3,
+            "range": "±4.8%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/multi/fast",
+            "value": 749.3,
+            "range": "±4.2%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/zoom/base",
+            "value": 125.6,
+            "range": "±4.5%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/accurate/base",
+            "value": 275.1,
+            "range": "±1.5%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/zoom/multi",
+            "value": 492,
+            "range": "±0.4%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/accurate/multi",
+            "value": 1018.4,
+            "range": "±0.9%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/resize/multi",
+            "value": 580.3,
+            "range": "±2.1%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/candles/hollow/cw2",
+            "value": 203.2,
+            "range": "±3.7%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/candles/ohlc/cw2",
+            "value": 172.3,
+            "range": "±1.7%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/candles/line/cw2",
+            "value": 113.7,
+            "range": "±2.6%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/scale/base",
+            "value": 263.8,
+            "range": "±5.0%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/realtime/base",
+            "value": 460.3,
+            "range": "±4.3%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/startup/base",
+            "value": 1851,
+            "range": "±20.6%",
+            "unit": "us"
+          },
+          {
+            "name": "frame_scenarios/scale/multi",
+            "value": 565.8,
+            "range": "±1.6%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/realtime/multi",
+            "value": 746.9,
+            "range": "±1.6%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/startup/multi",
+            "value": 2050,
+            "range": "±14.4%",
+            "unit": "us"
+          },
+          {
+            "name": "frame_scenarios/load/candles-40",
+            "value": 237.1,
+            "range": "±7.6%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/candles-140",
+            "value": 292.8,
+            "range": "±0.0%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/candles-400",
+            "value": 360.4,
+            "range": "±1.9%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-0",
+            "value": 103.3,
+            "range": "±6.3%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-3",
+            "value": 285.6,
+            "range": "±1.9%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-7",
+            "value": 490.9,
+            "range": "±1.4%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-14",
+            "value": 834.3,
+            "range": "±1.2%",
             "unit": "us/frame"
           }
         ]
