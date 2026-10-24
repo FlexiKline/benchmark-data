@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792853824360,
+  "lastUpdate": 1792853826119,
   "repoUrl": "https://github.com/FlexiKline/FlexiKline",
   "entries": {
     "L1 frame time (us/frame)": [
@@ -925,6 +925,175 @@ window.BENCHMARK_DATA = {
           {
             "name": "frame_scenarios/load/indicators-14",
             "value": 1.33,
+            "unit": "x"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "committer": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "distinct": true,
+          "id": "d181774ffd663bae4f47832c6e04b69143a5f6b8",
+          "message": "docs: refresh READMEs with features, performance table and benchmark index",
+          "timestamp": "2026-10-24T22:20:05+08:00",
+          "tree_id": "7789f0cda02680dfe0fff0bc8f3ced1715d64568",
+          "url": "https://github.com/FlexiKline/FlexiKline/commit/d181774ffd663bae4f47832c6e04b69143a5f6b8"
+        },
+        "date": 1792853825861,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "paint_frame/pan/base/cw7",
+            "value": 0.98,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/pan/base/cw2",
+            "value": 0.98,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/base/slow",
+            "value": 0.97,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/base/fast",
+            "value": 0.98,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw7",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw2",
+            "value": 1.01,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/multi/slow",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/multi/fast",
+            "value": 1,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/zoom/base",
+            "value": 0.98,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/accurate/base",
+            "value": 1.01,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/zoom/multi",
+            "value": 0.97,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/accurate/multi",
+            "value": 1.01,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/resize/multi",
+            "value": 1.02,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/candles/hollow/cw2",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/candles/ohlc/cw2",
+            "value": 1.01,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/candles/line/cw2",
+            "value": 0.95,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/scale/base",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/realtime/base",
+            "value": 1.01,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/startup/base",
+            "value": 0.81,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/scale/multi",
+            "value": 1,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/realtime/multi",
+            "value": 1.02,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/startup/multi",
+            "value": 0.97,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/candles-40",
+            "value": 1,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/candles-140",
+            "value": 0.98,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/candles-400",
+            "value": 1,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-0",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-3",
+            "value": 1.01,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-7",
+            "value": 1,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-14",
+            "value": 1,
             "unit": "x"
           }
         ]
