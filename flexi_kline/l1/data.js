@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793777412238,
+  "lastUpdate": 1793963378501,
   "repoUrl": "https://github.com/FlexiKline/FlexiKline",
   "entries": {
     "L1 frame time (us/frame)": [
@@ -787,6 +787,204 @@ window.BENCHMARK_DATA = {
             "name": "frame_scenarios/load/indicators-14",
             "value": 982.1,
             "range": "±2.2%",
+            "unit": "us/frame"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "committer": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "distinct": true,
+          "id": "9854f4873b450959c87991083eb5a1a513993e3e",
+          "message": "chore(release): prepare 2.7.1 release",
+          "timestamp": "2026-11-06T18:46:01+08:00",
+          "tree_id": "5f4324cb6e4339c0acb9e864967b4e45cc3bf2b4",
+          "url": "https://github.com/FlexiKline/FlexiKline/commit/9854f4873b450959c87991083eb5a1a513993e3e"
+        },
+        "date": 1793963378040,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "paint_frame/pan/base/cw7",
+            "value": 238.6,
+            "range": "±7.2%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/pan/base/cw2",
+            "value": 270.5,
+            "range": "±3.8%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/base/slow",
+            "value": 383.6,
+            "range": "±1.3%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/base/fast",
+            "value": 579.6,
+            "range": "±1.6%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw7",
+            "value": 624.5,
+            "range": "±4.4%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw2",
+            "value": 812.7,
+            "range": "±0.3%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/multi/slow",
+            "value": 669.3,
+            "range": "±4.0%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/multi/fast",
+            "value": 953.3,
+            "range": "±1.4%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/zoom/base",
+            "value": 166.8,
+            "range": "±5.5%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/accurate/base",
+            "value": 341.8,
+            "range": "±1.3%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/zoom/multi",
+            "value": 571.1,
+            "range": "±1.6%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/accurate/multi",
+            "value": 1089.2,
+            "range": "±2.3%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/resize/multi",
+            "value": 682.9,
+            "range": "±0.4%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/candles/hollow/cw2",
+            "value": 245.3,
+            "range": "±2.3%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/candles/ohlc/cw2",
+            "value": 216,
+            "range": "±1.0%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/candles/line/cw2",
+            "value": 141,
+            "range": "±8.4%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/scale/base",
+            "value": 312.3,
+            "range": "±7.3%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/realtime/base",
+            "value": 493.4,
+            "range": "±2.7%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/startup/base",
+            "value": 2244,
+            "range": "±29.1%",
+            "unit": "us"
+          },
+          {
+            "name": "frame_scenarios/scale/multi",
+            "value": 677.8,
+            "range": "±1.8%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/realtime/multi",
+            "value": 858.1,
+            "range": "±1.1%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/startup/multi",
+            "value": 2433,
+            "range": "±27.1%",
+            "unit": "us"
+          },
+          {
+            "name": "frame_scenarios/load/candles-40",
+            "value": 264.3,
+            "range": "±4.0%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/candles-140",
+            "value": 325.3,
+            "range": "±3.1%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/candles-400",
+            "value": 427.8,
+            "range": "±0.0%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-0",
+            "value": 156,
+            "range": "±6.7%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-3",
+            "value": 341.2,
+            "range": "±8.6%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-7",
+            "value": 584.9,
+            "range": "±1.6%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-14",
+            "value": 981.9,
+            "range": "±1.3%",
             "unit": "us/frame"
           }
         ]
