@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793963380791,
+  "lastUpdate": 1794460800607,
   "repoUrl": "https://github.com/FlexiKline/FlexiKline",
   "entries": {
     "L1 frame time (us/frame)": [
@@ -985,6 +985,198 @@ window.BENCHMARK_DATA = {
             "name": "frame_scenarios/load/indicators-14",
             "value": 981.9,
             "range": "±1.3%",
+            "unit": "us/frame"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "committer": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "distinct": true,
+          "id": "5f59f5aa14db80f9a96031420d16c04bba210f55",
+          "message": "fix(core): round derived candle spacing by the live width\n\nThe number of spacing parts was clamped by the saved SettingConfig.candleWidth,\nwhich only syncs when a zoom gesture ends. While zooming from a small width the\nspacing used stale parts, and on release it jumped to the value for the live\nwidth without paintDxOffset following, so the content under the focal point\nmoved.\n\nClamp the parts by the live candle width so the spacing is the same before and\nafter the gesture ends. Add regression cases that start zooming at small widths\nand end the gesture, and relax two assertions in the paint command count test\nthat depended on the stale spacing.",
+          "timestamp": "2026-11-12T13:10:25+08:00",
+          "tree_id": "16e99830223bc72a67f6a61f977fcae457a3a825",
+          "url": "https://github.com/FlexiKline/FlexiKline/commit/5f59f5aa14db80f9a96031420d16c04bba210f55"
+        },
+        "date": 1794460800413,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "paint_frame/pan/base/cw7",
+            "value": 164.7,
+            "range": "±6.1%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/pan/base/cw2",
+            "value": 164.4,
+            "range": "±7.7%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/base/slow",
+            "value": 259.8,
+            "range": "±2.6%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/base/fast",
+            "value": 357.2,
+            "range": "±2.4%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw7",
+            "value": 385.4,
+            "range": "±3.0%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw2",
+            "value": 504.5,
+            "range": "±2.6%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/multi/slow",
+            "value": 419.5,
+            "range": "±1.8%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/multi/fast",
+            "value": 577.5,
+            "range": "±0.4%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/zoom/base",
+            "value": 94.6,
+            "range": "±4.1%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/accurate/base",
+            "value": 223.3,
+            "range": "±0.1%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/zoom/multi",
+            "value": 359.4,
+            "range": "±2.8%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/accurate/multi",
+            "value": 752.1,
+            "range": "±0.5%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/resize/multi",
+            "value": 430.7,
+            "range": "±3.1%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/candles/hollow/cw2",
+            "value": 149.5,
+            "range": "±1.7%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/candles/ohlc/cw2",
+            "value": 130.4,
+            "range": "±3.9%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/candles/line/cw2",
+            "value": 86,
+            "range": "±1.3%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/scale/base",
+            "value": 197.5,
+            "range": "±4.3%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/realtime/base",
+            "value": 365.5,
+            "range": "±3.7%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/startup/base",
+            "value": 1429,
+            "range": "±0.2%",
+            "unit": "us"
+          },
+          {
+            "name": "frame_scenarios/scale/multi",
+            "value": 410.3,
+            "range": "±0.2%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/realtime/multi",
+            "value": 578.3,
+            "range": "±0.3%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/startup/multi",
+            "value": 1580,
+            "range": "±1.3%",
+            "unit": "us"
+          },
+          {
+            "name": "frame_scenarios/load/candles-40",
+            "value": 196.7,
+            "range": "±1.6%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/candles-140",
+            "value": 231.6,
+            "range": "±2.4%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-0",
+            "value": 97.6,
+            "range": "±7.5%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-3",
+            "value": 218.6,
+            "range": "±1.1%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-7",
+            "value": 365.3,
+            "range": "±0.8%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-14",
+            "value": 615,
+            "range": "±4.9%",
             "unit": "us/frame"
           }
         ]
