@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794460800607,
+  "lastUpdate": 1794460802391,
   "repoUrl": "https://github.com/FlexiKline/FlexiKline",
   "entries": {
     "L1 frame time (us/frame)": [
@@ -2020,6 +2020,170 @@ window.BENCHMARK_DATA = {
           {
             "name": "frame_scenarios/load/indicators-14",
             "value": 0.97,
+            "unit": "x"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "committer": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "distinct": true,
+          "id": "5f59f5aa14db80f9a96031420d16c04bba210f55",
+          "message": "fix(core): round derived candle spacing by the live width\n\nThe number of spacing parts was clamped by the saved SettingConfig.candleWidth,\nwhich only syncs when a zoom gesture ends. While zooming from a small width the\nspacing used stale parts, and on release it jumped to the value for the live\nwidth without paintDxOffset following, so the content under the focal point\nmoved.\n\nClamp the parts by the live candle width so the spacing is the same before and\nafter the gesture ends. Add regression cases that start zooming at small widths\nand end the gesture, and relax two assertions in the paint command count test\nthat depended on the stale spacing.",
+          "timestamp": "2026-11-12T13:10:25+08:00",
+          "tree_id": "16e99830223bc72a67f6a61f977fcae457a3a825",
+          "url": "https://github.com/FlexiKline/FlexiKline/commit/5f59f5aa14db80f9a96031420d16c04bba210f55"
+        },
+        "date": 1794460802219,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "paint_frame/pan/base/cw7",
+            "value": 0.97,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/pan/base/cw2",
+            "value": 1.05,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/base/slow",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/base/fast",
+            "value": 0.97,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw7",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw2",
+            "value": 1.08,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/multi/slow",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/multi/fast",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/zoom/base",
+            "value": 0.97,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/accurate/base",
+            "value": 0.96,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/zoom/multi",
+            "value": 1.04,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/accurate/multi",
+            "value": 0.98,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/resize/multi",
+            "value": 1,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/candles/hollow/cw2",
+            "value": 1.06,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/candles/ohlc/cw2",
+            "value": 1.06,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/candles/line/cw2",
+            "value": 1.02,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/scale/base",
+            "value": 1.09,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/realtime/base",
+            "value": 0.98,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/startup/base",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/scale/multi",
+            "value": 1.07,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/realtime/multi",
+            "value": 0.97,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/startup/multi",
+            "value": 1.02,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/candles-40",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/candles-140",
+            "value": 1,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-0",
+            "value": 1.04,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-3",
+            "value": 1,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-7",
+            "value": 1.01,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-14",
+            "value": 1.02,
             "unit": "x"
           }
         ]
