@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794460802391,
+  "lastUpdate": 1795525399481,
   "repoUrl": "https://github.com/FlexiKline/FlexiKline",
   "entries": {
     "L1 frame time (us/frame)": [
@@ -1177,6 +1177,186 @@ window.BENCHMARK_DATA = {
             "name": "frame_scenarios/load/indicators-14",
             "value": 615,
             "range": "±4.9%",
+            "unit": "us/frame"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "committer": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "distinct": true,
+          "id": "a088f1447cb28ca26e6e50244747535999277029",
+          "message": "feat(flexi_kline): expose latest price label width to indicators\n\nAdd PaintContext.latestPriceLabelWidth and PaintObject.isLatestCandleInView so any indicator can tell whether the candle draws the latest price or the last price. The width is held by CandleBasePaintObject and replaces CandlePaintObject.latestPriceLabelOffsetX.\n\nSplit paintLatestPriceMarkers into paintInViewPriceMark, which returns the label width, and paintOffViewPriceMark, which returns the label rect. offViewPriceLabelRect is now read-only and cleared when offViewPriceMark is hidden.\n\nSize the latest price and the countdown to the wider of the two so a long countdown is not cut off.",
+          "timestamp": "2026-11-23T23:54:32+08:00",
+          "tree_id": "fd8d963eedd7f816331b75b44a6e29c4cd80700d",
+          "url": "https://github.com/FlexiKline/FlexiKline/commit/a088f1447cb28ca26e6e50244747535999277029"
+        },
+        "date": 1795525399140,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "frame_scenarios/scale/base",
+            "value": 200.5,
+            "range": "±5.7%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/realtime/base",
+            "value": 224.6,
+            "range": "±9.0%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/startup/base",
+            "value": 2135,
+            "range": "±5.4%",
+            "unit": "us"
+          },
+          {
+            "name": "frame_scenarios/scale/multi",
+            "value": 417.8,
+            "range": "±1.0%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/realtime/multi",
+            "value": 466.9,
+            "range": "±4.0%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/startup/multi",
+            "value": 2087,
+            "range": "±4.8%",
+            "unit": "us"
+          },
+          {
+            "name": "frame_scenarios/load/candles-40",
+            "value": 191.6,
+            "range": "±9.4%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/candles-140",
+            "value": 227.8,
+            "range": "±11.7%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-0",
+            "value": 104.1,
+            "range": "±10.8%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-3",
+            "value": 223.8,
+            "range": "±11.6%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-7",
+            "value": 385.7,
+            "range": "±2.7%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-14",
+            "value": 628,
+            "range": "±8.2%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/zoom/base",
+            "value": 99.2,
+            "range": "±17.7%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/zoom/multi",
+            "value": 365.3,
+            "range": "±3.6%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/resize/multi",
+            "value": 445.1,
+            "range": "±0.9%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/candles/hollow/cw2",
+            "value": 160.5,
+            "range": "±6.1%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/candles/ohlc/cw2",
+            "value": 138.1,
+            "range": "±6.5%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/candles/line/cw2",
+            "value": 88.5,
+            "range": "±7.3%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/pan/base/cw7",
+            "value": 166.6,
+            "range": "±13.0%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/pan/base/cw2",
+            "value": 175.7,
+            "range": "±3.6%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/base/slow",
+            "value": 263.8,
+            "range": "±0.2%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/base/fast",
+            "value": 346.9,
+            "range": "±4.5%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw7",
+            "value": 410.9,
+            "range": "±0.3%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw2",
+            "value": 513.2,
+            "range": "±4.4%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/multi/slow",
+            "value": 428.2,
+            "range": "±2.2%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/multi/fast",
+            "value": 583.7,
+            "range": "±6.0%",
             "unit": "us/frame"
           }
         ]
