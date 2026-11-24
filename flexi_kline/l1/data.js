@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795525399481,
+  "lastUpdate": 1795525401785,
   "repoUrl": "https://github.com/FlexiKline/FlexiKline",
   "entries": {
     "L1 frame time (us/frame)": [
@@ -2364,6 +2364,160 @@ window.BENCHMARK_DATA = {
           {
             "name": "frame_scenarios/load/indicators-14",
             "value": 1.02,
+            "unit": "x"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "committer": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "distinct": true,
+          "id": "a088f1447cb28ca26e6e50244747535999277029",
+          "message": "feat(flexi_kline): expose latest price label width to indicators\n\nAdd PaintContext.latestPriceLabelWidth and PaintObject.isLatestCandleInView so any indicator can tell whether the candle draws the latest price or the last price. The width is held by CandleBasePaintObject and replaces CandlePaintObject.latestPriceLabelOffsetX.\n\nSplit paintLatestPriceMarkers into paintInViewPriceMark, which returns the label width, and paintOffViewPriceMark, which returns the label rect. offViewPriceLabelRect is now read-only and cleared when offViewPriceMark is hidden.\n\nSize the latest price and the countdown to the wider of the two so a long countdown is not cut off.",
+          "timestamp": "2026-11-23T23:54:32+08:00",
+          "tree_id": "fd8d963eedd7f816331b75b44a6e29c4cd80700d",
+          "url": "https://github.com/FlexiKline/FlexiKline/commit/a088f1447cb28ca26e6e50244747535999277029"
+        },
+        "date": 1795525401483,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "frame_scenarios/scale/base",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/realtime/base",
+            "value": 1.59,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/startup/base",
+            "value": 0.68,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/scale/multi",
+            "value": 1.04,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/realtime/multi",
+            "value": 1.28,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/startup/multi",
+            "value": 0.8,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/candles-40",
+            "value": 0.96,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/candles-140",
+            "value": 1.03,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-0",
+            "value": 0.98,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-3",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-7",
+            "value": 0.96,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-14",
+            "value": 1.02,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/zoom/base",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/zoom/multi",
+            "value": 1.01,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/resize/multi",
+            "value": 0.98,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/candles/hollow/cw2",
+            "value": 0.93,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/candles/ohlc/cw2",
+            "value": 0.93,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/candles/line/cw2",
+            "value": 1.03,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/pan/base/cw7",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/pan/base/cw2",
+            "value": 0.98,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/base/slow",
+            "value": 0.98,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/base/fast",
+            "value": 1.03,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw7",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw2",
+            "value": 1.03,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/multi/slow",
+            "value": 1.01,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/multi/fast",
+            "value": 1.01,
             "unit": "x"
           }
         ]
