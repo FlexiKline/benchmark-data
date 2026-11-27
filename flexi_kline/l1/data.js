@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795768794135,
+  "lastUpdate": 1795768796174,
   "repoUrl": "https://github.com/FlexiKline/FlexiKline",
   "entries": {
     "L1 frame time (us/frame)": [
@@ -2698,6 +2698,160 @@ window.BENCHMARK_DATA = {
           {
             "name": "paint_frame/cross/multi/fast",
             "value": 1.01,
+            "unit": "x"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "committer": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "distinct": true,
+          "id": "3ec9979e9af13d1f58f1ee8a33ebfc41057f7940",
+          "message": "fix(flexi_kline): lay out main pane tips from padding.top and repaint after the tips area changes\n\n- Start main pane tips at padding.top and keep the same padding between the\n  tips and the chart; no tips reserve no area.\n- Order tips rows by the order indicators were added to the main pane instead\n  of zIndex (new MainPaintObject.linkedChildren), so the volume no longer\n  always takes the first row.\n- Repaint the chart once more after a frame that changed the tips area\n  height, so candles, indicator lines and the cross price label no longer\n  drift apart (new read-only MainPaintObject.tipsAreaHeight).\n- Paint the cross line and tooltip after the indicators' cross content.\n- Bump flexi_kline to 2.8.1.",
+          "timestamp": "2026-11-26T22:02:00+08:00",
+          "tree_id": "efc518a5910afc76684298b811c009f69640e42a",
+          "url": "https://github.com/FlexiKline/FlexiKline/commit/3ec9979e9af13d1f58f1ee8a33ebfc41057f7940"
+        },
+        "date": 1795768795848,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "frame_variants/zoom/base",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/zoom/multi",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/resize/multi",
+            "value": 1,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/candles/hollow/cw2",
+            "value": 0.97,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/candles/ohlc/cw2",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/candles/line/cw2",
+            "value": 0.97,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/scale/base",
+            "value": 0.94,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/realtime/base",
+            "value": 1.01,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/startup/base",
+            "value": 0.97,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/scale/multi",
+            "value": 0.98,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/realtime/multi",
+            "value": 0.96,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/startup/multi",
+            "value": 0.95,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/candles-40",
+            "value": 1.03,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/candles-140",
+            "value": 1.09,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-0",
+            "value": 1.16,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-3",
+            "value": 1,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-7",
+            "value": 0.98,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-14",
+            "value": 0.98,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/pan/base/cw7",
+            "value": 1,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/pan/base/cw2",
+            "value": 1.01,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/base/slow",
+            "value": 1.01,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/base/fast",
+            "value": 0.97,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw7",
+            "value": 1,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw2",
+            "value": 1,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/multi/slow",
+            "value": 1.01,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/multi/fast",
+            "value": 0.98,
             "unit": "x"
           }
         ]
