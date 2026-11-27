@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795774480353,
+  "lastUpdate": 1795774481964,
   "repoUrl": "https://github.com/FlexiKline/FlexiKline",
   "entries": {
     "L1 frame time (us/frame)": [
@@ -3031,6 +3031,160 @@ window.BENCHMARK_DATA = {
           },
           {
             "name": "paint_frame/cross/multi/fast",
+            "value": 0.98,
+            "unit": "x"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "committer": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "distinct": true,
+          "id": "b25ca1bc5dc7dd16722e6fcf2c217506624cd547",
+          "message": "fix(flexi_kline): serialize IIndicatorKey with a fixed type prefix and prepare 2.8.2\n\nruntimeType.toString() is shortened in obfuscated and Web release builds, so persisted keys could not be read back and activated indicators were lost on restart. FlexiDrawType gains a readable toString.",
+          "timestamp": "2026-11-27T18:09:06+08:00",
+          "tree_id": "6498ae8cc87f9f54f769fc2c9d0e47959ba25aef",
+          "url": "https://github.com/FlexiKline/FlexiKline/commit/b25ca1bc5dc7dd16722e6fcf2c217506624cd547"
+        },
+        "date": 1795774481832,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "frame_variants/zoom/base",
+            "value": 1.01,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/zoom/multi",
+            "value": 1,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/resize/multi",
+            "value": 1.05,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/candles/hollow/cw2",
+            "value": 1,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/candles/ohlc/cw2",
+            "value": 0.97,
+            "unit": "x"
+          },
+          {
+            "name": "frame_variants/candles/line/cw2",
+            "value": 0.95,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/pan/base/cw7",
+            "value": 1.04,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/pan/base/cw2",
+            "value": 1.04,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/base/slow",
+            "value": 1.02,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/base/fast",
+            "value": 1.02,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw7",
+            "value": 1,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw2",
+            "value": 0.96,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/multi/slow",
+            "value": 0.97,
+            "unit": "x"
+          },
+          {
+            "name": "paint_frame/cross/multi/fast",
+            "value": 0.98,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/scale/base",
+            "value": 1.01,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/realtime/base",
+            "value": 1.01,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/startup/base",
+            "value": 1.07,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/scale/multi",
+            "value": 0.97,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/realtime/multi",
+            "value": 0.97,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/startup/multi",
+            "value": 1.05,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/candles-40",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/candles-140",
+            "value": 0.89,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-0",
+            "value": 0.85,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-3",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-7",
+            "value": 0.99,
+            "unit": "x"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-14",
             "value": 0.98,
             "unit": "x"
           }
