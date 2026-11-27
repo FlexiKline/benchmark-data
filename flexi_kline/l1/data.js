@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795768796174,
+  "lastUpdate": 1795774480353,
   "repoUrl": "https://github.com/FlexiKline/FlexiKline",
   "entries": {
     "L1 frame time (us/frame)": [
@@ -1537,6 +1537,186 @@ window.BENCHMARK_DATA = {
             "name": "paint_frame/cross/multi/fast",
             "value": 528.6,
             "range": "±2.6%",
+            "unit": "us/frame"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "committer": {
+            "email": "kangqiao610@gmail.com",
+            "name": "Andy.Zhao",
+            "username": "kangqiao"
+          },
+          "distinct": true,
+          "id": "b25ca1bc5dc7dd16722e6fcf2c217506624cd547",
+          "message": "fix(flexi_kline): serialize IIndicatorKey with a fixed type prefix and prepare 2.8.2\n\nruntimeType.toString() is shortened in obfuscated and Web release builds, so persisted keys could not be read back and activated indicators were lost on restart. FlexiDrawType gains a readable toString.",
+          "timestamp": "2026-11-27T18:09:06+08:00",
+          "tree_id": "6498ae8cc87f9f54f769fc2c9d0e47959ba25aef",
+          "url": "https://github.com/FlexiKline/FlexiKline/commit/b25ca1bc5dc7dd16722e6fcf2c217506624cd547"
+        },
+        "date": 1795774480180,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "frame_variants/zoom/base",
+            "value": 94.5,
+            "range": "±1.4%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/zoom/multi",
+            "value": 333.9,
+            "range": "±1.6%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/resize/multi",
+            "value": 397.2,
+            "range": "±3.0%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/candles/hollow/cw2",
+            "value": 133.4,
+            "range": "±2.5%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/candles/ohlc/cw2",
+            "value": 115,
+            "range": "±4.6%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_variants/candles/line/cw2",
+            "value": 85.6,
+            "range": "±2.5%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/pan/base/cw7",
+            "value": 145.1,
+            "range": "±1.0%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/pan/base/cw2",
+            "value": 131.5,
+            "range": "±1.7%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/base/slow",
+            "value": 218.2,
+            "range": "±0.0%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/base/fast",
+            "value": 292.6,
+            "range": "±3.2%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw7",
+            "value": 368.4,
+            "range": "±1.2%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/pan/multi/cw2",
+            "value": 468.6,
+            "range": "±3.1%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/multi/slow",
+            "value": 410.9,
+            "range": "±0.2%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "paint_frame/cross/multi/fast",
+            "value": 533.7,
+            "range": "±0.9%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/scale/base",
+            "value": 155.5,
+            "range": "±0.6%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/realtime/base",
+            "value": 208.7,
+            "range": "±6.0%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/startup/base",
+            "value": 1719,
+            "range": "±7.7%",
+            "unit": "us"
+          },
+          {
+            "name": "frame_scenarios/scale/multi",
+            "value": 384,
+            "range": "±1.2%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/realtime/multi",
+            "value": 432.6,
+            "range": "±1.3%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/startup/multi",
+            "value": 1693,
+            "range": "±13.3%",
+            "unit": "us"
+          },
+          {
+            "name": "frame_scenarios/load/candles-40",
+            "value": 176.1,
+            "range": "±5.8%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/candles-140",
+            "value": 211.8,
+            "range": "±2.3%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-0",
+            "value": 89.2,
+            "range": "±0.7%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-3",
+            "value": 194.4,
+            "range": "±1.2%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-7",
+            "value": 334.9,
+            "range": "±0.0%",
+            "unit": "us/frame"
+          },
+          {
+            "name": "frame_scenarios/load/indicators-14",
+            "value": 585.8,
+            "range": "±0.4%",
             "unit": "us/frame"
           }
         ]
